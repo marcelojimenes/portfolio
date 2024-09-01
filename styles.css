@@ -1,0 +1,168 @@
+/* Estilização Global para o body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #CFDEE3;
+}
+
+/* Inicio - Estilização do Cabeçalho */
+header {
+    background: #265B6A;
+    color: #457684;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Para exibir itens da lista em linha */
+    margin: 0 15px;  /* Adiciona uma margem entre os itens da lista */
+}
+
+nav ul li a {
+    color: #CFDEE3;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    cursor: pointer;  /* Mostra o cursor de ponteiro ao passar sobre os links */
+}
+
+nav ul li.active a {
+    color: #9CB9C2;
+    font-weight: bold;
+    border-bottom: 2px solid #9CB9C2;
+}
+/* Fim - Estilização do Cabeçalho */
+
+/* Inicio - Estilização das sections */
+section {
+    padding: 100px 20px 20px;
+    display: none;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section.active {
+    display: block;
+}
+
+section .section-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section h2 {
+    color: #457484;
+    margin-top: 0;
+}
+
+section p {
+    color: #000;
+}
+/* Fim - Estilização das sections */
+
+/* Estilização do formulário */
+form {
+    display: flex;
+    flex-direction: column; /* Organiza os itens do formulário em coluna */
+    width: 100%;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background: #6A909D;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #27596A;
+}
+/*Fim - Estilização do formulário */
+
+/* Estilo do carrossel */
+.carousel {
+    position: relative;  /* Necessário para posicionar os botões */
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;   /* Centraliza o carrossel */
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;  /* Coloca as imagens em linha */
+    transition: transform 0.5s ease-in-out;  /* Transição suave para animação */
+}
+
+.carousel-slide {
+    min-width: 100%; /* Cada slide ocupa toda a largura do carrossel */
+    box-sizing: border-box;
+    text-align: center; /* Centraliza o texto */
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-slide p {
+    margin: 10px 0 0; /* Ajuste de margens para o texto */
+    color: #333;  /* Cor do texto */
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 10px; /* Botão de "anterior" à esquerda */
+}
+
+.next-btn {
+    right: 10px; /* Botão de "próximo" à direita */
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo mais escuro ao passar o mouse */
+}

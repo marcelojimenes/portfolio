@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcelo Jimenes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--Cabeçalho da tela com o a barra de navegação-->
+<header>
+    <h1>Marcelo Oliveira | RU: 4272429</h1>
+    <nav>
+        <ul>
+            <li data-section="sobre-mim"><a href="#">Sobre Mim</a></li>
+            <li data-section="formacao-educacional"><a href="#">Formação Educacional</a></li>
+            <li data-section="portfolio"><a href="#">Portfólio</a></li>
+            <li data-section="contato"><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--Conteúdo das sections-->
+<section id="sobre-mim">
+    <div class="section-content">
+        <h2>Sobre Mim</h2>
+        <p>
+            Olá, meu nome é Marcelo. Nasci e cresci na cidade de São Paulo/SP. Tenho 25 anos de idade e atualmente
+            trabalho como desenvolvedor de software.
+        </p>
+        <p>
+            A minha jornada como um profissional de tecnologia se iniciou em 2018, após eu me formar no curso de
+            auxiliar de enfermagem e não querer seguir com a profissão por não me adaptar as situações desafiadoras que
+            os profissionais de saúde enfrentam no dia a dia.
+        </p>
+        <p>
+            Frustado por não saber qual caminho seguir e incerto sobre o futuro, decidi voltar minha atenção pra algo
+            que me chamava atenção desde criança: o desenvolvimento de softwares.
+            Meu pai foi uma grande referência pra mim nesse quesito. Um dia eu o vi construindo um arduíno e achei
+            aquilo incrível.
+        </p>
+        <p>
+            Foi então que tomei uma atitude que mudou minha vida: me inscrevi no curso técnico de análise e
+            desenvolvimento de sistemas no final de 2019.
+            Desde então sigo estudando e trabalhando diariamente, sempre enfrentando novos desafios para conseguir me
+            tornar um profissional cada vez mais qualificado.
+        </p>
+    </div>
+</section>
+
+<section id="formacao-educacional">
+    <div class="section-content">
+        <h2>Formação Educacional</h2>
+        <ul>
+            <li>
+                <h3>Ensino Médio</h3>
+                <p>E.E Prof. Edina Àlvares Barbosa</p>
+                <p>Concluído - dezembro de 2016</p>
+            </li>
+            <li>
+                <h3>Curso Técnico em Análise e Desenvolvimento de Sistemas</h3>
+                <p>ETEC de Itaquaquecetuba </p>
+                <p>Concluído - julho de 2021</p>
+            </li>
+            <li>
+                <h3>CST Análise e Desenvolvimento de Sistemas</h3>
+                <p>Centro Universitário Uninter</p>
+                <p>Em Andamento - previsão de conclusão em fevereiro de 2026</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="section-content">
+        <h2>Portfólio</h2>
+        <p>Aqui estão alguns dos projetos que desenvolvi academicamente.</p>
+        <h3>Clique na imagem visualizar o projeto</h3>
+        <div class="carousel">
+            <button class="carousel-btn prev-btn">&#10094;</button>
+            <div class="carousel-images">
+                <div class="carousel-slide">
+                    <a href="https://marcelojimenes.github.io/requisicao-cep-ajax-jquery/" target="_blank">
+                        <img src="img/consulta-cep.png" alt="Projeto Consulta CEP">
+                    </a>
+                    <p>Projeto pessoal desenvolvido para aprofundar meu conhecimento em requisições AJAX utilizando a biblioteca JQuery do Javascript.</p>
+                </div>
+                <div class="carousel-slide">
+                    <a href="https://www.figma.com/proto/9nMThGvOaUuXjRIYAVthzo/Upewy?node-id=13-682&t=tAjKGTpbNpE7IoIW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2" target="_blank">
+                        <img src="img/upewy.png" alt="Prótipo de alta fidelidade">
+                    </a>
+                    <p>Projeto pessoal desenvolvido no Figma para a máteria de Design de Interação sobre um protótipo de alta fidelidade</p>
+                </div>
+            </div>
+            <button class="carousel-btn next-btn">&#10095;</button>
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <div class="section-content">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<!--Scripts js da tela-->
+<script src="scripts/main.js"></script>
+<script src="scripts/section.js"></script>
+<script src="scripts/carousel.js"></script>
+</body>
+</html>
